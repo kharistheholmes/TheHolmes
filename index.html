@@ -7,74 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header class="site-header">
     <img src="logo.png" class="header-logo" alt="Logo">
     
     <div class="header-text">
         <h1 class="site-title">SIDO RABI ORA IKI?</h1>
-        <p class="site-slogan">Kalkulator kecocokan weton Jawa modern</p>
+        <p class="site-slogan">Kalkulator kecocokan weton Jawa, solusi lancar rabi</p>
     </div>
 </header>
-
-
     <main>
-        <div class="card">
-            <h2>Weton Pria</h2>
-            <select id="hariPria">
-                <option value="">-- Pilih Hari --</option>
-                <option>Minggu</option>
-                <option>Senin</option>
-                <option>Selasa</option>
-                <option>Rabu</option>
-                <option>Kamis</option>
-                <option>Jumat</option>
-                <option>Sabtu</option>
-            </select>
-
-            <select id="pasaranPria">
-                <option value="">-- Pilih Pasaran --</option>
-                <option>Legi</option>
-                <option>Pahing</option>
-                <option>Pon</option>
-                <option>Wage</option>
-                <option>Kliwon</option>
-            </select>
-        </div>
-
-        <div class="card">
-            <h2>Weton Wanita</h2>
-            <select id="hariWanita">
-                <option value="">-- Pilih Hari --</option>
-                <option>Minggu</option>
-                <option>Senin</option>
-                <option>Selasa</option>
-                <option>Rabu</option>
-                <option>Kamis</option>
-                <option>Jumat</option>
-                <option>Sabtu</option>
-            </select>
-
-            <select id="pasaranWanita">
-                <option value="">-- Pilih Pasaran --</option>
-                <option>Legi</option>
-                <option>Pahing</option>
-                <option>Pon</option>
-                <option>Wage</option>
-                <option>Kliwon</option>
-            </select>
-        </div>
-
-        <button class="btn" onclick="hitungWeton()">Hitung Kecocokan</button>
-
-        <div id="hasil" class="hasil hidden"></div>
-    </main>
-
+    <h2>Kalkulator Kecocokan Weton Jawa</h2>
+    <div class="form-box">
+        <label>Tanggal Lahir Manten Lanang:</label>
+        <input type="date" id="tanggal1">
+        <label>Tanggal Lahir Manten Wadon:</label>
+        <input type="date" id="tanggal2">
+        <button onclick="proses()">Hitung</button>
+    </div>
+    <div id="hasil" class="hidden"></div>
+</main>
     <footer>
-        <p>© 2025 • Dibuat untuk Lomba AREK_AI Jatim • Oleh Tim Anda</p>
+        <p>© 2025 • Dibuat untuk Lomba AREK_AI Jatim • Oleh Tim TheHolmes</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
+
 
