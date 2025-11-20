@@ -1,111 +1,82 @@
 body {
-    margin: 0;
-    font-family: "Segoe UI", sans-serif;
-    background: #f5f5f7;
-    color: #333;
+margin: 0;
+font-family: "Segoe UI", sans-serif;
+background: #ffffff;
+color: #545454;
 }
 
-header {
-    text-align: left;
-    padding: 25px;
-    background: #7e57c2;
-    color: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+/* HEADER */
+.site-header {
+background: #F5A941;
+padding: 20px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-main {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 10px;
+.header-left {
+display: flex;
+align-items: center;
 }
 
+.logo {
+height: 60px;
+margin-right: 15px;
+}
+
+.header-text h1 {
+margin: 0;
+color: #ffffff;
+font-size: 26px;
+font-weight: bold;
+}
+
+.header-text p {
+margin: 0;
+color: #ffffff;
+opacity: 0.9;
+}
+
+/* MAIN CARD */
 .card {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+max-width: 500px;
+margin: 30px auto;
+padding: 20px;
+border-radius: 12px;
+background: #F8C146;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .card h2 {
-    margin-top: 0;
-    color: #FFC000;
+margin-top: 0;
+color: #545454;
 }
 
-select {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 8px;
-    border: 1px solid #bbb;
-    font-size: 16px;
+input {
+width: 100%;
+padding: 12px;
+margin: 10px 0 20px;
+border-radius: 6px;
+border: 1px solid #aaa;
+font-size: 16px;
 }
 
-.btn {
-    width: 100%;
-    padding: 15px;
-    background:#FFC000;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-bottom: 20px;
+button {
+width: 100%;
+background: #545454;
+color: #ffffff;
+padding: 14px;
+border-radius: 6px;
+border: none;
+font-size: 17px;
+cursor: pointer;
 }
 
-.btn:hover {
-    background: #8b4000;
+button:hover {
+background: #3d3d3d;
 }
 
-.hasil {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    animation: fadeIn 0.4s ease;
-}
-
-.hidden {
-    display: none;
-}
-
+/* FOOTER */
 footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    color: #555;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-/* Item solusi agar terlihat seperti tombol */
-.solusi-item {
-    padding: 12px;
-    background: #C04000;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    border: 1px solid #FAC898;
-    transition: 0.2s;
-}
-
-/* Efek hover */
-.solusi-item:hover {
-    background: #C04000;
-}
-
-.detail {
-    display: none;
-    margin-top: 10px;
-    padding: 12px;
-    background: #ffffff;
-    border-left: 4px solid #A0522D;
-    border-radius: 8px;
-    font-size: 15px;
-    animation: fadeIn 0.3s ease;
-}
-.show {
-    display: block;
+text-align: center;
+padding: 15px;
+color: #545454;
 }
