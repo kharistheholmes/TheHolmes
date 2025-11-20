@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    text-align: center;
+    text-align: left;
     padding: 25px;
     background: #7e57c2;
     color: white;
@@ -29,7 +29,7 @@ main {
 
 .card h2 {
     margin-top: 0;
-    color: #4e3790;
+    color: #FFC000;
 }
 
 select {
@@ -44,7 +44,7 @@ select {
 .btn {
     width: 100%;
     padding: 15px;
-    background: #4e3790;
+    background:#FFC000;
     color: white;
     font-size: 18px;
     border: none;
@@ -54,7 +54,7 @@ select {
 }
 
 .btn:hover {
-    background: #3d2f78;
+    background: #8b4000;
 }
 
 .hasil {
@@ -79,4 +79,33 @@ footer {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+/* Item solusi agar terlihat seperti tombol */
+.solusi-item {
+    padding: 12px;
+    background: #C04000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid #FAC898;
+    transition: 0.2s;
+}
+
+/* Efek hover */
+.solusi-item:hover {
+    background: #C04000;
+}
+
+.detail {
+    display: none;
+    margin-top: 10px;
+    padding: 12px;
+    background: #ffffff;
+    border-left: 4px solid #A0522D;
+    border-radius: 8px;
+    font-size: 15px;
+    animation: fadeIn 0.3s ease;
+}
+.show {
+    display: block;
 }
