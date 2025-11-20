@@ -54,31 +54,31 @@ const sisa = totalNeptu % 7;
 const ramalanList = {
     1: {
         nama: "Wasesa Segara",
-        arti: "Pasangan yang luhur budi pekerti, pemaaf, dan berwibawa."
+        arti: "Kalian akan menjadi pasangan yang memiliki keluhuran budi pekerti, mudah memberikan maaf, memiliki wibawa dimata orang lain, dan berlapang dada dalam berbagai hal."
     },
     2: {
         nama: "Tunggak Semi",
-        arti: "Rezeki berkembang baik dalam rumah tangga."
+        arti: "Kalian akan menjadi pasangan yang memiliki rezeki melimpah dalam rumah tangga."
     },
     3: {
         nama: "Satria Wibawa",
-        arti: "Keluarga disegani dan berkedudukan baik."
+        arti: "Kalian akan menjadi pasangan yang dalam kehidupan rumah tangganya memiliki kemuliaan dan keluhuran didalam keluarga maupun masyarakat."
     },
     4: {
         nama: "Sumur Sinaba",
-        arti: "Menjadi tempat bertanya dan sumber pengetahuan."
+        arti: "Pasangan anda memiliki pengetahuan atau kepandaian yang luar biasa sehingga sering menjadi tempat bertanya bagi orang lain."
     },
     5: {
         nama: "Satria Wirang",
-        arti: "Sering mendapatkan kesulitan dan malu."
+        arti: "Anda dan pasangan akan sering menanggung malu dan kesusahan."
     },
     6: {
         nama: "Bumi Kepetak",
-        arti: "Banyak kerja keras namun tetap bertahan."
+        arti: "Rumah tangga anda akan tahan pada kondisi sengsara dan kalut hati. Kalian adalah pasangan yang rajin bekerja dan selalu menjaga kebersihan."
     },
     0: {
         nama: "Lebu Ketiup Angin",
-        arti: "Sering menemui kesulitan, cita-cita sulit tercapai."
+        arti: "Kalian akan mengalami kehidupan yang sengsara, keinginan seringkali tidak terkabul, dan memiliki kecenderungan sering berpindah rumah."
     }
 };
 
@@ -122,6 +122,10 @@ return hasil;
 ```
 
 }
+function toggleSolusi(el) {
+    const p = el.querySelector("p");
+    p.style.display = p.style.display === "block" ? "none" : "block";
+}
 
 function proses() {
 const t1 = document.getElementById("tanggal1").value;
@@ -160,7 +164,9 @@ if ([1, 2, 3, 4].includes(sisa)) {
 
     tambahan = `
         <div class="hari-baik">
-            <h3>Hasil Bagus — Banyak Hari Cocok!</h3>
+            <h3>Selamat weton kalian cocok, berikut kami rekomendasikan hari baik untuk menikah.</h3>
+            <h4>Jangan lupa hafalkan tepuk sakinah!</h4>
+            <h4>Ingatlah, perhitungan weton adalah panduan, namun komunikasi, kesetiaan, dan saling pengertian adalah pilar utama pernikahan yang langgeng</h4>
             ${htmlList}
         </div>
     `;
@@ -168,14 +174,16 @@ if ([1, 2, 3, 4].includes(sisa)) {
 } else {
     tambahan = `
         <div class="solusi">
-            <h3>Hasil Kurang Baik — Tapi Masih Ada Solusi</h3>
+            <h3>Jangan terlalu kecewa karena weton kalian tidak cocok, karena Tuhan-lah yang menentukan segala sesuatu. </h3>
+            <h4>Tenang, berikut solusi agar kalian tetap bisa menikah! </h4>
+            <h4>Ingat jika hubungan dibangun atas dasar cinta, tanggung jawab, dan saling menerima, maka weton hanyalah satu bagian kecil dari banyak faktor kehidupan rumah tangga.</h4>
             <ul>
                 <li>Tirakat atau laku spiritual</li>
                 <li>Ruwatan atau netralisasi</li>
                 <li>Tolak bala / sesajen khusus</li>
                 <li>Memilih hari yang lebih serasi</li>
             </ul>
-            <small>Sumber: Suara Merdeka</small>
+            <small>Sumber: https://jatim.suaramerdeka.com/sisi-lain/108815406777/7-solusi-bila-hitungan-weton-jawa-bersama-pasangan-tidak-cocok </small>
         </div>
     `;
 }
