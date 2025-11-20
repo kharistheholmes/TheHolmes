@@ -12,24 +12,13 @@
 
 <div class="container">
 
-    <!-- Input Pasangan -->
-    <div class="card">
-        <h2>Kalkulator Weton Jodoh</h2>
+   <input type="date" id="tanggal1">
+<input type="date" id="tanggal2">
 
-        <label>Nama Kamu:</label>
-        <input type="text" id="namaA">
+<button onclick="proses()">Hitung Kecocokan</button>
 
-        <label>Tanggal Lahir Kamu:</label>
-        <input type="date" id="tglA">
+<div id="hasil"></div>
 
-        <label>Nama Pasangan:</label>
-        <input type="text" id="namaB">
-
-        <label>Tanggal Lahir Pasangan:</label>
-        <input type="date" id="tglB">
-
-        <button onclick="hitungWeton()">Hitung Kecocokan</button>
-    </div>
 
     <!-- Hasil -->
     <div class="card" id="hasilCard" style="display:none;">
@@ -49,3 +38,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
